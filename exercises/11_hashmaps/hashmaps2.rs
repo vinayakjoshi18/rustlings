@@ -17,6 +17,8 @@ enum Fruit {
     Mango,
     Lychee,
     Pineapple,
+    Kiwi,
+    Guava,
 }
 
 fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
@@ -32,6 +34,10 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Insert new fruits if they are not already present in the
         // basket. Note that you are not allowed to put any type of fruit that's
         // already present!
+        basket.insert(Fruit::Kiwi, 6);
+        basket.insert(Fruit::Guava, 2);
+        basket.insert(Fruit::Banana, 2);
+        basket.insert(Fruit::Pineapple, 2);
     }
 }
 
